@@ -4,14 +4,15 @@ import './Project.css';
 function Project(props) {
     return (
         <div>
-            <h2>{props.title}</h2>
             <div className="project-body">
-                {props.children}
-                
-                <div>
+                {props.children} 
+                {/* contains the image */}
+
+                <div className="project-desc">
+                    <h2>{props.title}</h2>
                     <div className="project-text">{props.text}</div>
-                    <a href={props.naturelink}>view abstract</a>
-                    <a href={props.link}>view dataset</a>
+                    <a href={props.naturelink} target="blank">view abstract</a>
+                    <a href={props.link} target="blank">view dataset</a>
                 </div>
             </div>
             

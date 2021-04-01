@@ -1,8 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=PT+Sans&family=Playfair+Display:wght@400;500;600;700&family=Spartan:wght@300;400;500&display=swap');
+
 .App {
   text-align: center;
 }
-
+.App-body {
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
 .App-header {
   background-image: url("./img/gene.png");
   background-attachment: fixed;
+  padding: 6vw;
 }
+.App-header img {
+  width: 110px;
+}
+.App-header h3{
+  font-size: 57px;
+  letter-spacing: 1.5px;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  margin-top: 17px;
+  margin-bottom: 25px;
+}
+.App-header h4{
+  font-family: 'Spartan', sans-serif;
+  letter-spacing: .7px;
+  font-size: 25px;
+  font-weight: 300;
+  color: white;
+  width: 38vw;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+  margin-top: 0px;
+}
+
+/* ------------------------page section------------------------- */
+
+.Pagesection {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+.Pagesection h2 {
+  font-family: 'Playfair Display', serif;
+  color: black;
+  letter-spacing: 1.5px;
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 10vh;
+}
+.Pagesection-normal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Pagesection-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.Pagesection-normal img {
+  width: 30vw;
+}
+.Pagesection-normal div {
+  font-family: 'Spartan', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  width: 35vw;
+  line-height: 1.5;
+}
+
+/* -------------------------projects----------------------- */
+.project-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10vh;
+}
+.project-body img {
+  height: 320px;
+}
+.project-body div {
+  text-align: justify;
+}
+.project-text {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  width: 30vw;
+  line-height: 1.5;
+  
+}
+.project-desc {
+  padding-left: 8vw;
+}
+.project-desc h2 {
+  font-family: 'Spartan', sans-serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.project-desc a {
+  padding: 10px;
+  background-color: lightskyblue;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* -----------------------footer----------------------------- */
+
+
+.Footer {
+  padding: 8vh;
+  height: 5vh;
+  background-color: lightskyblue;
+}
+
