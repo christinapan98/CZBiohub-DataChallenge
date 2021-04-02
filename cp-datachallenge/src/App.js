@@ -13,11 +13,14 @@ import Project from './components/Project.js';
 export class App extends Component {
   constructor(props) {
     super(props)
-    this.scrollCheck = this.scrollCheck.bind(this);
-    this.scrollUp = this.scrollUp.bind(this);
+    
     this.state = {
       scrolledDown: false
     }
+    this.scrollCheck = this.scrollCheck.bind(this);
+    this.scrollUp = this.scrollUp.bind(this);
+    this.trackMouseMove = this.trackMouseMove.bind(this);
+    this.circleRef = React.createRef();
   }
   
   scrollCheck() {
@@ -26,8 +29,7 @@ export class App extends Component {
       this.setState({
         scrolledDown: true
       })
-    } 
-    else {
+    } else {
       this.setState({
         scrolledDown: false
       })
@@ -40,15 +42,26 @@ export class App extends Component {
       behavior: "smooth"
     });
   }
-
+  trackMouseMove(e) {
+      let xPos = e.clientX;
+      let yPos = e.clientY;
+      console.log(React.findDOMNode(this.refs.container));
+      console.log("hi");
+      
+  }
   componentDidMount() {
     window.addEventListener('scroll', this.scrollCheck, true);
+    document.addEventListener('mousemove', this.trackMouseMove, true);
   }
   render() {
     let stickyClass = this.state.scrolledDown ? "App-sticky-logo" : "App-sticky-logo App-sticky-logo-hide";
 
     return (
+      
+
       <div className="App">
+        <div className="cursor-circle" ref={this.circleRef}></div>
+
         <div className={stickyClass} onClick={()=>this.scrollUp()}>
           <img src={logoblue} alt="biohub-logoblu" className="biohub-logo-blue"></img>
         </div>
