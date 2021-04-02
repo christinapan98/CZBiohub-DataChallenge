@@ -21,7 +21,7 @@ function App() {
       </div>
 
       <div className="App-body">
-        <PageSection title="the mission" maintext="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" type="Pagesection-normal">
+        <PageSection title="the mission" maintext="In the past decade, single-cell transcriptomics has revolutionized the scientific community by enabling breakthroughs in our ability to build cellular maps of tissues. By creating detailed compendiums of annotated Mus musculus cells, we at the Biohub aim to advance human understanding of biology and disease." type="Pagesection-normal">
             <img src={mission} alt="mission"></img>
         </PageSection>
 
@@ -31,8 +31,7 @@ function App() {
 
         <PageSection title="the projects" type="Pagesection-project">
           <Project title="Tabula Muris" naturelink="https://www.nature.com/articles/s41586-018-0590-4"
-          text="Tabula Muris—also known as the Mouse Cell Atlas—is a library of single cell transcriptome data 
-          covering over 100,000 cells from 20 organs. This library provides a comprehensive resource for studying gene expression across different cell types." 
+          text="Tabula Muris—also known as the Mouse Cell Atlas—is a comprehensive library of single cell transcriptome data, providing a rich resource for studying gene expression across different cell types." 
           link="https://tabula-muris.ds.czbiohub.org/">
             <img src={tmuris} alt="muris"></img>
           </Project>
@@ -50,7 +49,8 @@ function App() {
 
         {/* -------------------------------------------------------- */}
 
-        <PageSection title="the biohub" maintext="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" type="Pagesection-normal">
+        <PageSection title="the biohub" maintext="In 2016, the Chan Zuckerberg initiative was launched with a bold vision: to cure, prevent or manage disease in our children’s lifetime.
+        The Chan Zuckerberg Biohub was created to support that vision — by understanding the fundamental mechanisms underlying disease and developing new technologies to lead to actionable diagnostics and effective therapies." type="Pagesection-normal">
           <img src={biohub} alt="biohub"></img>
         </PageSection>
 

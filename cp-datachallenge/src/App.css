@@ -46,7 +46,7 @@
   font-family: 'Playfair Display', serif;
   color: black;
   letter-spacing: 1.5px;
-  font-size: 40px;
+  font-size: 50px;
   text-align: left;
   margin-bottom: 10vh;
 }
@@ -60,16 +60,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  height: 140vh;
+  margin-top: -17vh;
 }
 .Pagesection-normal img {
-  width: 30vw;
+  width: 35vw;
 }
 .Pagesection-normal div {
   font-family: 'Spartan', sans-serif;
   font-size: 20px;
   text-align: left;
   width: 35vw;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* -------------------------projects----------------------- */
@@ -77,10 +79,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10vh;
+  margin-top: -10vh;
 }
 .project-body img {
-  height: 320px;
+  height: 300px;
 }
 .project-body div {
   text-align: justify;
@@ -89,7 +91,7 @@
   font-family: 'Spartan', sans-serif;
   font-size: 15px;
   width: 30vw;
-  line-height: 1.5;
+  line-height: 1.6;
   
 }
 .project-desc {
@@ -98,14 +100,29 @@
 .project-desc h2 {
   font-family: 'Spartan', sans-serif;
   font-size: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-
+.project-desc span {
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
+  margin-top: 20px;
+}
 .project-desc a {
   padding: 10px;
-  background-color: lightskyblue;
+  background-color: dodgerblue;
   color: white;
   text-decoration: none;
+  border: 2px solid transparent;
+  transition: all .3s;
+  font-family: 'Spartan', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+}
+.project-desc a:hover {
+  background-color: white;
+  border: 2px solid dodgerblue;
+  color: black;
 }
 
 
@@ -115,6 +132,6 @@
 .Footer {
   padding: 8vh;
   height: 5vh;
-  background-color: lightskyblue;
+  background-color: dodgerblue;
 }
 
