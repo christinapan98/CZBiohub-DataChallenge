@@ -13,8 +13,8 @@ import Project from './components/Project.js';
 export class App extends Component {
   constructor(props) {
     super(props)
-    this.scrollFunction = this.scrollFunction.bind(this);
-    this.scrollFunction = this.scrollFunction.bind(this);
+    this.scrollCheck = this.scrollCheck.bind(this);
+    this.scrollUp = this.scrollUp.bind(this);
     this.state = {
       scrolledDown: false
     }
@@ -35,7 +35,10 @@ export class App extends Component {
   }
 
   scrollUp() {
-
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   }
 
   componentDidMount() {
@@ -46,7 +49,7 @@ export class App extends Component {
 
     return (
       <div className="App">
-        <div className={stickyClass} onClick={this.scrollUp}>
+        <div className={stickyClass} onClick={()=>this.scrollUp()}>
           <img src={logoblue} alt="biohub-logoblu" className="biohub-logo-blue"></img>
         </div>
 

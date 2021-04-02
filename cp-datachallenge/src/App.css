@@ -148,7 +148,35 @@
 
 .Footer {
   padding: 8vh;
-  height: 5vh;
+  padding-bottom: 10vh;
+  /* height: 5vh; */
   background-color: dodgerblue;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+.Footer img {
+  width: 300px;
+  margin-left: -30px;
+}
+
+.Footer span {
+  display: flex;
+  width: 250px;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+.Footer span a {
+  color: white;
+  font-family: 'Spartan', sans-serif;
+  font-weight: bold;
+}
+
+.Footer span a:hover {
+  cursor: pointer;
+}
+
 
