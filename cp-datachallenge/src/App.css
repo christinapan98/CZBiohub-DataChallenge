@@ -4,8 +4,25 @@
   text-align: center;
 }
 .App-body {
-  padding-left: 12vw;
-  padding-right: 12vw;
+  padding-left: 13vw;
+  padding-right: 13vw;
+}
+.App-sticky-logo {
+  position: fixed;
+  left: 30px;
+  top: 20px;
+  transition: all .2s;
+  opacity: 1;
+}
+.App-sticky-logo:hover {
+  cursor: pointer;
+}
+.App-sticky-logo-hide {
+  opacity: 0;
+}
+.biohub-logo-blue {
+  width: 60px;
+
 }
 .App-header {
   background-image: url("./img/gene.png");
@@ -13,7 +30,7 @@
   padding: 6vw;
 }
 .App-header img {
-  width: 110px;
+  width: 120px;
 }
 .App-header h3{
   font-size: 57px;
